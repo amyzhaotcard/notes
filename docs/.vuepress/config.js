@@ -1,7 +1,7 @@
 module.exports = {
   base: '/notes/',
   title: '知食',
-  description: '大明湖畔-王翠花',
+  description: '拾柒',
   dest: './dist',
   locales: {
     '/': {
@@ -28,6 +28,8 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
+          '/mianshi/React相关/',
+          '/mianshi/JS相关/',
           '/mianshi/JS/数据类型',
           '/mianshi/JS/作用域和作用域链',
           '/mianshi/JS/闭包',
