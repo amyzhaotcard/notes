@@ -15,14 +15,12 @@
 
 ## 手写一个 new
 
-```
+```javascript
 function _new() {
-    var obj = new Object(),  // 创建一个新的对象，并返回
+  var obj = new Object(), // 创建一个新的对象，并返回
     Constructor = [].shift.call(arguments); // 截取传入函数的第一个参数
-    obj.__proto__ = Constructor.prototype; // 将第一个参数的prototype与要返回的对象建立关联
-    var result = Constructor.apply(obj, arguments);  // 使用apply，改变构造函数的this指向，使其指向新对象，这样，obj就可以访问到构造函数中的属性了
-    return typeof result === 'object' ? result : obj;  // 如果函数返回值是一个对象，那就返回这个对象，如果不是就返回新的对象
-
-};
-
+  obj.__proto__ = Constructor.prototype; // 将第一个参数的prototype与要返回的对象建立关联
+  var result = Constructor.apply(obj, arguments); // 使用apply，改变构造函数的this指向，使其指向新对象，这样，obj就可以访问到构造函数中的属性了
+  return typeof result === "object" ? result : obj; // 如果函数返回值是一个对象，那就返回这个对象，如果不是就返回新的对象
+}
 ```

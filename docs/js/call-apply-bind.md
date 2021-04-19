@@ -9,7 +9,7 @@
 
 ## call
 
-```
+```javascript
 fun.call(thisArg, arg1, arg2, ...)
 ```
 
@@ -19,8 +19,8 @@ fun.call(thisArg, arg1, arg2, ...)
 
 ## apply
 
-```
-fun.apply(thisArg, [argsArray])
+```javascript
+fun.apply(thisArg, [argsArray]);
 ```
 
 - 调用 apply 的对象，必须是个函数 `Functin`
@@ -29,7 +29,7 @@ fun.apply(thisArg, [argsArray])
 
 ## bind
 
-```
+```javascript
 fun.bind(thisArg[, arg1[, arg2[, ...]]])
 ```
 
