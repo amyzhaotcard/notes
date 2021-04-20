@@ -27,6 +27,7 @@ module.exports = {
         sidebarDepth: 1,
         children: [
           "/js/原型和原型链",
+          "/js/继承",
           "/js/new操作符",
           "/js/call-apply-bind",
           "/js/闭包",
@@ -39,14 +40,17 @@ module.exports = {
         path: "/vue",
         collapsable: true,
         sidebarDepth: 1,
-        children: ["/vue/Vue 组件 data 为什么必须是函数？"],
+        children: [
+          "/vue/Vue组件data为什么必须是函数？",
+          "/vue/Vue中props、data、computed加载顺序",
+        ],
       },
       {
         title: "React相关",
         path: "/react",
         collapsable: true,
         sidebarDepth: 1,
-        children: ["/react/setState"],
+        children: ["/react/生命周期", "/react/setState"],
       },
       {
         title: "CSS相关",
