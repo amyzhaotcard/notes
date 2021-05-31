@@ -33,6 +33,7 @@ module.exports = {
           "/js/闭包",
           "/js/作用域和作用域链",
           "/js/let、const和var的区别",
+          "/js/深浅拷贝",
         ],
       },
       {
@@ -50,7 +51,11 @@ module.exports = {
         path: "/react",
         collapsable: true,
         sidebarDepth: 1,
-        children: ["/react/生命周期", "/react/setState"],
+        children: [
+          "/react/生命周期",
+          "/react/setState",
+          "/react/调用super的目的",
+        ],
       },
       {
         title: "CSS相关",
