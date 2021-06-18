@@ -35,6 +35,47 @@ fun.bind(thisArg[, arg1[, arg2[, ...]]])
 
 - `bind` 方法的返回值是函数，并且需要调用后，才会执行。而 `apply` 和 `call` 是立即调用的
 
+bind() 方法会创建一个新函数。当这个新函数被调用时，bind() 的第一个参数将作为它运行时的 this，之后的一序列参数将会在传递的实参前传入作为它的参数。
+
+## bind 的实现
+
+bind 函数有 2 个特点：
+
+- 返回一个函数
+- 可以传入参数
+
+代码实现
+
+```javascript
+Function.prototype.bind = function (context) {
+  if (typeof this !== "function") {
+    throw new Error("调用 bind 的不是函数");
+  }
+
+  var self = this;
+  // 获取bind函数从第二个参数到最后一个参数
+  var args = Array.prototype.slice.call(arguments, 1);
+
+  var fNOP = function () {};
+
+  var fBound = function () {
+    // 这个时候的arguments是指bind返回的函数传入的参数
+    var bindArgs = Array.prototype.slice.call(arguments);
+    // 当作为构造函数时，this 指向实例，此时结果为 true，将绑定函数的 this 指向该实例，可以让实例获得来自绑定函数的值
+    // 当作为普通函数时，this 指向 window，此时结果为 false，将绑定函数的 this 指向 context
+    return self.apply(
+      this instanceof fNOP ? this : context,
+      args.concat(bindArgs)
+    );
+  };
+
+  // 修改返回函数的 prototype 为绑定函数的 prototype，实例就可以继承绑定函数的原型中的值
+  fNOP.prototype = this.prototype;
+  fBound.prototype = new fNOP();
+  return fBound;
+};
+```
+
 ## this 的指向
 
 this 永远指向最后调用它的那个对象

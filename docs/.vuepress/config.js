@@ -34,6 +34,9 @@ module.exports = {
           "/js/作用域和作用域链",
           "/js/let、const和var的区别",
           "/js/深浅拷贝",
+          "/js/防抖和节流",
+          "/js/Promise",
+          "/js/数组相关",
         ],
       },
       {
@@ -70,6 +73,18 @@ module.exports = {
           "/css/link 和@import ",
           "/css/margin塌陷&合并",
           "/css/rgba()和 opacity",
+        ],
+      },
+      {
+        title: "网络相关",
+        path: "/网络",
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          "/网络/对称加密和非对称加密区别",
+          "/网络/七层网络模型",
+          "/网络/tcp",
+          "/网络/http",
         ],
       },
       {

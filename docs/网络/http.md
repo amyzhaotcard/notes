@@ -1,0 +1,16 @@
+# http
+
+## HTTP 和 HTTPS 的区别
+
+- HTTP 明文传输，数据都是未加密的，安全性较差，HTTPS（SSL+HTTP） 数据传输过程是加密的，安全性较好
+- 使用 HTTPS 协议需要到 CA（Certificate Authority，数字证书认证机构） 申请证书，一般免费证书较少，因而需要一定费用
+- HTTP 页面响应速度比 HTTPS 快，主要是因为 HTTP 使用 TCP 三次握手建立连接，客户端和服务器需要交换 3 个包，而 HTTPS 除了 TCP 的三个包，还要加上 ssl 握手需要的 9 个包，所以一共是 12 个包
+- HTTP 的默认端口是 80，HTTPS 为 443
+- HTTPS 其实就是建构在 SSL/TLS 之上的 HTTP 协议，所以，要比较 HTTPS 比 HTTP 要更耗费服务器资源
+
+## HTTPS 的缺点
+
+- HTTPS 协议多次握手，导致页面的加载时间延长近 50%
+- HTTPS 连接缓存不如 HTTP 高效，会增加数据开销和功耗
+- 申请 SSL 证书需要钱，功能越强大的证书费用越高
+- SSL 涉及到的安全算法会消耗 CPU 资源，对服务器资源消耗较大

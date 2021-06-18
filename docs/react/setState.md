@@ -8,7 +8,7 @@
 
 在 state 中定义一个值，在 componentDidMount 中 setState 改变这个值，如：
 
-```
+```javascript
   constructor(props) {
     super(props);
     this.state = {
@@ -23,7 +23,7 @@
 
 此时的打印结果为 1，从表象上看，像是异步的操作， 但其实只是异步的表现形式，每次调用 setState 都会触发更新，异步操作是为了提高性能，将多个状态合并一起更新，减少重新 render 的次数。如果在一个循环中 setState，在同步机制下，就会重复渲染，消耗性能，所以 react 会将多个 setState 合并为一个执行，当执行 setState 时，state 中的数据不会立马更新。
 
-```
+```javascript
 for (let i = 0; i < 100; i++) {
   this.setState({ number: this.state.number + 1 });
   console.log(this.state.number);
@@ -38,7 +38,7 @@ for (let i = 0; i < 100; i++) {
 
 通过回调函数
 
-```
+```javascript
 this.setState({ number: 3 }, () => {
   console.log(this.state.number); // 3
 });
@@ -46,10 +46,10 @@ this.setState({ number: 3 }, () => {
 
 #### 为什么 setTimeout 可以将 setState 的执行顺序从异步变为同步？
 
-```
- setTimeout(() => {
+```javascript
+setTimeout(() => {
   this.setState({ number: 3 });
-  console.log(this.state.number);  // 3
+  console.log(this.state.number); // 3
 }, 0);
 ```
 
@@ -70,3 +70,5 @@ isBatchingUpdates 这个变量，在 React 的生命周期函数以及合成事�
 ## 调用 setstate 之后发生了什么？
 
 在代码中调用 setState 函数之后，React 会将传入的参数对象与组件当前的状态合并，然后触发所谓的调和过程（Reconciliation）。经过调和过程，React 会以相对高效的方式根据新的状态构建 React 元素树并且着手重新渲染整个 UI 界面。在 React 得到元素树之后，React 会自动计算出新的树与老树的节点差异，然后根据差异对界面进行最小化重渲染。在差异计算算法中，React 能够相对精确地知道哪些位置发生了改变以及应该如何改变，这就保证了按需更新，而不是全部重新渲染。
+
+
