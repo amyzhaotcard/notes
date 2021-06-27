@@ -45,8 +45,17 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
+          "/vue/Vue和react对比",
+          "/vue/生命周期",
+          "/vue/双向绑定",
           "/vue/Vue组件data为什么必须是函数？",
           "/vue/Vue中props、data、computed加载顺序",
+          "/vue/Vue初次渲染过程",
+          "/vue/Vue组件patch过程",
+          "/vue/为什么要异步更新&&nextTick",
+          "/vue/computed VS methods VS watch",
+          "/vue/v-show&&v-if",
+          "/vue/为什么v-if和v-for不建议一起用",
         ],
       },
       {
@@ -86,6 +95,23 @@ module.exports = {
           "/网络/tcp",
           "/网络/http",
         ],
+      },
+      {
+        title: "其他",
+        path: "/其他",
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          "/其他/说说你对SPA的理解",
+          "/其他/SPA首屏加载速度慢的怎么解决",
+        ],
+      },
+      {
+        title: "面经",
+        path: "/面经",
+        collapsable: true,
+        sidebarDepth: 1,
+        children: ["/面经/0628来未来", "/面经/0630爱库存"],
       },
       {
         title: "面试",
