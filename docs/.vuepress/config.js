@@ -130,7 +130,11 @@ module.exports = {
         path: "/面经",
         collapsable: true,
         sidebarDepth: 1,
-        children: ["/面经/0628来未来", "/面经/0630爱库存"],
+        children: [
+          "/面经/0628来未来",
+          "/面经/0630爱库存",
+          "/面经/0702艾耕科技",
+        ],
       },
       {
         title: "面试",
