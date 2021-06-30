@@ -37,6 +37,9 @@ module.exports = {
           "/js/防抖和节流",
           "/js/Promise",
           "/js/数组相关",
+          "/js/Object与Map的异同及使用场景",
+          "/js/shadow DOM",
+          "/js/宏任务和微任务",
         ],
       },
       {
@@ -56,6 +59,7 @@ module.exports = {
           "/vue/computed VS methods VS watch",
           "/vue/v-show&&v-if",
           "/vue/为什么v-if和v-for不建议一起用",
+          "/vue/组件通讯",
         ],
       },
       {
@@ -82,6 +86,18 @@ module.exports = {
           "/css/link 和@import ",
           "/css/margin塌陷&合并",
           "/css/rgba()和 opacity",
+          "/css/重绘和重排",
+        ],
+      },
+      {
+        title: "打包相关",
+        path: "/打包相关",
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          "/打包相关/webpack和gulp的区别",
+          "/打包相关/webpack loader 怎么理解",
+          "/打包相关/webpack plugin 怎么理解",
         ],
       },
       {
@@ -94,6 +110,9 @@ module.exports = {
           "/网络/七层网络模型",
           "/网络/tcp",
           "/网络/http",
+          "/网络/强缓存和协商缓存",
+          "/网络/浏览器存储",
+          "/网络/浏览器渲染过程",
         ],
       },
       {
