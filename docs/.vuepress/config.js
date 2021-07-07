@@ -64,6 +64,7 @@ module.exports = {
           "/vue/computed VS methods VS watch",
           "/vue/v-show&&v-if",
           "/vue/为什么v-if和v-for不建议一起用",
+          "/vue/keep-alive",
           "/vue/vue3中 Composition Api 了解么",
         ],
       },
