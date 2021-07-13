@@ -64,6 +64,7 @@ module.exports = {
           "/vue/computed VS methods VS watch",
           "/vue/v-show&&v-if",
           "/vue/为什么v-if和v-for不建议一起用",
+          "/vue/Vue2.0 v-for 中 :key 到底有什么用？",
           "/vue/keep-alive",
           "/vue/vue3中 Composition Api 了解么",
         ],
@@ -102,9 +103,15 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
+          "/打包相关/webpack的构建流程",
           "/打包相关/webpack和gulp的区别",
           "/打包相关/webpack loader 怎么理解",
           "/打包相关/webpack plugin 怎么理解",
+          "/打包相关/Loader和Plugin的区别？编写Loader，Plugin的思路？",
+          "/打包相关/webpack的热更新",
+          "/打包相关/proxy",
+          "/打包相关/如何借助webpack来优化前端性能",
+          "/打包相关/如何提高webpack的构建速度",
         ],
       },
       {
@@ -122,6 +129,8 @@ module.exports = {
           "/网络/浏览器存储",
           "/网络/地址栏输入 URL 敲下回车后发生了什么",
           "/网络/http安全",
+          "/网络/说说对WebSocket的理解？应用场景？",
+          "/网络/如何理解CDN？说说实现原理",
         ],
       },
       {
