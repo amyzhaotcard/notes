@@ -38,7 +38,7 @@ module.exports = {
           "/js/Promise",
           "/js/数组相关",
           "/js/Object与Map的异同及使用场景",
-          "/js/shadow DOM",
+          "/js/shadowDOM",
           "/js/宏任务和微任务",
           "/js/generator",
         ],
@@ -95,6 +95,10 @@ module.exports = {
           "/css/margin塌陷&合并",
           "/css/rgba()和 opacity",
           "/css/重绘和重排",
+          "/css/实现上下左右居中的方法",
+          "/css/margin: 0 auto; 什么情况下使用",
+          "/css/flex",
+          "/css/css 有那些动画",
         ],
       },
       {
@@ -148,6 +152,7 @@ module.exports = {
         children: [
           "/其他/说说你对SPA的理解",
           "/其他/SPA首屏加载速度慢的怎么解决",
+          "/其他/SSR",
         ],
       },
       {

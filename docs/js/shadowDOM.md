@@ -26,4 +26,4 @@ let shadow = elementRef.attachShadow({ mode: "open" });
 let shadow = elementRef.attachShadow({ mode: "closed" });
 ```
 
-可以使用同样的方式来操作 Shadow DOM，就和操作常规 DOM 一样,例如添加子节点、设置属性，以及为节点添加自己的样式（例如通过 element.style 属性），或者为整个 Shadow DOM 添加样式（例如在 <style> 元素内添加样式）
+可以使用同样的方式来操作 Shadow DOM，就和操作常规 DOM 一样,例如添加子节点、设置属性，以及为节点添加自己的样式（例如通过 element.style 属性），或者为整个 Shadow DOM 添加样式（例如在 style 元素内添加样式）
