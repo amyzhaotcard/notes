@@ -55,6 +55,7 @@ module.exports = {
         children: [
           "/vue/Vue和react对比",
           "/vue/vue 3 和vue 2的区别",
+          "/vue/vue2的diff",
           "/vue/生命周期",
           "/vue/双向绑定",
           "/vue/组件通讯",
@@ -178,6 +179,7 @@ module.exports = {
           "/面经/0628来未来",
           "/面经/0630爱库存",
           "/面经/0702艾耕科技",
+          "/面经/20210719微店",
         ],
       },
       {

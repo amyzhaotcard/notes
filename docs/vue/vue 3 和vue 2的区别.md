@@ -26,7 +26,7 @@ vue3 相比 vue2
 ### 更易维护
 
 - compositon Api: 可与现有的 Options API 一起使用;灵活的逻辑组合与复用;Vue3 模块可以和其他框架搭配使用
-- 更好的 Typescript 支持
+- **更好的 Typescript 支持**: Vue.js 3.0 抛弃 Flow 后，**使用 TypeScript 重构了整个项目**。 TypeScript 提供了更好的类型检查，能支持复杂的类型推导；由于源码就使用 TypeScript 编写，也省去了单独维护 d.ts 文件的麻烦；就整个 TypeScript 的生态来看，TypeScript 团队也是越做越好，TypeScript 本身保持着一定频率的迭代和更新，支持的 feature 也越来越多。
 - 编译器重写
 
 ## Vue3 新增特性
