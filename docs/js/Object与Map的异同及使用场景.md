@@ -2,15 +2,15 @@
 
 ## Map
 
-Map 是一种数据结构,在 Map 中，每一对数据的格式都为键值对的形式。Map 中的键和值可以是任何数据类型，不仅限于字符串或整数。
+Map 是一种数据结构,在 Map 中，每一对数据的格式都为 key value 的形式。Map 中的 key 和 value 可以是任何数据类型，不仅限于字符串或整数。
 
 ## Object
 
-Object 遵循与 Map 类型相同键值对的存储结构。JavaScript 中的 Object 拥有内置原型(prototype)。需要注意的是，JavaScript 中几乎所有对象都是 Object 实例，包括 Map。
+Object 遵循与 Map 类型相同 key value 的存储结构。JavaScript 中的 Object 拥有内置原型(prototype)。需要注意的是，JavaScript 中几乎所有对象都是 Object 实例，包括 Map。
 
 ## 区别
 
-- 键：Object 遵循普通的字典规则，键必须是单一类型，并且只能是整数、字符串或是 Symbol 类型。但在 Map 中，key 可以为任意数据类型（Object, Array 等）。
+- key：Object 遵循普通的字典规则，key 必须是单一类型，并且只能是整数、字符串或是 Symbol 类型。但在 Map 中，key 可以为任意数据类型（Object, Array 等）。
 - 元素顺序：Map 会保留所有元素的顺序，而 Object 并不会保证属性的顺序。
 - 继承：Map 是 Object 的实例对象，而 Object 显然不可能是 Map 的实例对象。
 - 构建方式：
@@ -33,3 +33,11 @@ Object 遵循与 Map 类型相同键值对的存储结构。JavaScript 中的 Ob
 - Map 是一个纯哈希结构，而 Object 不是（它拥有自己的内部逻辑）。使用 delete 对 Object 的属性进行删除操作存在很多性能问题。所以，针对于存在大量增删操作的场景，使用 Map 更合适。
 - 不同于 Object，Map 会保留所有元素的顺序。Map 结构是在基于可迭代的基础上构建的，所以如果考虑到元素迭代或顺序，使用 Map 更好，它能够确保在所有浏览器中的迭代性能。
 - Map 在存储大量数据的场景下表现更好，尤其是在 key 为未知状态，并且所有 key 和所有 value 分别为相同类型的情况下。
+
+## object 为什么是无序的（Object 是怎么存储的）
+
+[栈空间和堆空间：数据是如何存储的](https://blog.poetries.top/browser-working-principle/guide/part3/lesson12.html)
+
+对象是以 Hash 结构存储的（hash 表其实就是管理一对对<Key，Value>这样的结构）
+
+在 JavaScript 的执行过程中， 主要有三种类型内存空间，分别是代码空间、栈空间和堆空间。

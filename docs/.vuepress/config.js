@@ -41,6 +41,10 @@ module.exports = {
           "/js/shadowDOM",
           "/js/宏任务和微任务",
           "/js/generator",
+          "/js/代码题",
+          "/js/js引擎有哪些",
+          "/js/垃圾回收",
+          "/js/内存泄漏",
         ],
       },
       {
@@ -50,6 +54,7 @@ module.exports = {
         sidebarDepth: 1,
         children: [
           "/vue/Vue和react对比",
+          "/vue/vue 3 和vue 2的区别",
           "/vue/生命周期",
           "/vue/双向绑定",
           "/vue/组件通讯",
@@ -66,7 +71,8 @@ module.exports = {
           "/vue/为什么v-if和v-for不建议一起用",
           "/vue/Vue2.0 v-for 中 :key 到底有什么用？",
           "/vue/keep-alive",
-          "/vue/vue3中 Composition Api 了解么",
+          "/vue/vue3中CompositionApi了解么",
+          "/vue/vue是如何编译.vue 文件的",
         ],
       },
       {
@@ -99,6 +105,7 @@ module.exports = {
           "/css/margin: 0 auto; 什么情况下使用",
           "/css/flex",
           "/css/css 有那些动画",
+          "/css/层级上下文",
         ],
       },
       {
@@ -154,6 +161,13 @@ module.exports = {
           "/其他/SPA首屏加载速度慢的怎么解决",
           "/其他/SSR",
         ],
+      },
+      {
+        title: "项目相关",
+        path: "/项目相关",
+        collapsable: true,
+        sidebarDepth: 1,
+        children: ["/项目相关/qiankun"],
       },
       {
         title: "面经",

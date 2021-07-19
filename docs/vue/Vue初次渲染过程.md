@@ -1,6 +1,7 @@
 # Vue 初次渲染过程（new Vue 发生了什么）
 
 `new vue` => `init` => `$mount` => `compile(编译)` => `render` => `vnode` => `patch` => `dom`
+
 简单流程描述：
 
 - new Vue 的时候调用会调用\_init 方法

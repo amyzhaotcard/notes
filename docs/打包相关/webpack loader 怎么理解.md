@@ -31,3 +31,7 @@ webpack 做的事情，仅仅是分析出各种模块的依赖关系，然后形
 - url-loader: 和 file-loader 类似，但是当文件小于设定的 limit 时可以返回一个 Data Url
 - html-minify-loader: 压缩 HTML
 - babel-loader :用 babel 来转换 ES6 文件到 ES
+
+## loader 的工作流程
+
+将代码进行分析，构建 AST (抽象语法树)， 遍历进行定向的修改后，再重新生成新的代码字符串。
