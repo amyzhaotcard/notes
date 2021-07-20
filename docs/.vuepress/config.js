@@ -65,7 +65,6 @@ module.exports = {
           "/vue/Vue中props、data、computed加载顺序",
           "/vue/Vue初次渲染过程",
           "/vue/从修改data里的数据到视图更新的过程",
-          "/vue/Vue组件patch过程",
           "/vue/为什么要异步更新&&nextTick",
           "/vue/computed VS methods VS watch",
           "/vue/v-show&&v-if",
