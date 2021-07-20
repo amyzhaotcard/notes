@@ -40,4 +40,5 @@ ES6 诞生之前只有以下几种：
 Promise 的写法只是回调函数的改进，使用 then 方法以后，异步任务的两段执行看得更清楚了，除此以外，并无新意
 :::
 [深入理解 generator](http://www.alloyteam.com/2016/02/generators-in-depth/)
+
 [Generator 函数的异步应用](https://es6.ruanyifeng.com/#docs/generator-async)
