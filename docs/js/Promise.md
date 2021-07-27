@@ -33,7 +33,7 @@ Promise 构造函数接受一个函数作为参数，该函数的两个参数分
 - resolve 函数的作用是，将 Promise 对象的状态从“未完成”变为“成功”
 - reject 函数的作用是，将 Promise 对象的状态从“未完成”变为“失败”
 
-#### 实例方法
+## 实例方法(then、catch、finally)
 
 - then()
   - then 方法返回的是一个新的 Promise 实例，也就是 promise 能链式书写的原因
@@ -121,7 +121,7 @@ class Promise {
 - reject()
 - try()
 
-#### all()
+### all()
 
 `const p = Promise.all([p1, p2, p3]);`
 
@@ -174,7 +174,7 @@ class Promise {
 
 ```
 
-#### race()
+### race()
 
 `const p = Promise.race([p1, p2, p3]);`
 
@@ -205,7 +205,7 @@ class Promise {
   }
 ```
 
-#### allSettled()
+### allSettled()
 
 - 只有等到所有这些参数实例都返回结果，不管是 resolved（成功） 还是 rejected（失败），包装实例才会结束，一旦结束，状态总是 resolved（成功），并且把所有状态返回
 - 该方法由 ES2020 引入
@@ -260,7 +260,7 @@ static allSettled(promises) {
   }
 ```
 
-#### resolve()
+### resolve()
 
 - 将现有对象转为 Promise 对象
 
@@ -275,7 +275,7 @@ new Promise((resolve) => resolve("foo"));
 - 参数不是具有 then()方法的对象，或根本就不是对象，Promise.resolve()会返回一个新的 Promise 对象，状态为 resolved
 - 没有参数时，直接返回一个 resolved 状态的 Promise 对象
 
-#### reject()
+### reject()
 
 - Promise.reject(reason)方法也会返回一个新的 Promise 实例，该实例的状态为 rejected
 - Promise.reject()方法的参数，会原封不动地变成后续方法的参数
@@ -377,3 +377,9 @@ function createAsyncIterable(arr) {
 
 方法六：generator + co
 只知道这样也可以实现，后续补充
+
+## Promise.then 为什么可以链式调用
+
+then 方法返回的是一个新的 Promise 实例，也就是 promise 能链式书写的原因
+
+## Promise.then 为什么可以写多个

@@ -37,6 +37,8 @@ module.exports = {
           "/js/防抖和节流",
           "/js/Promise",
           "/js/数组相关",
+          "/js/for-in 和 for-of 的区别是什么",
+          "/js/js的对象怎么遍历",
           "/js/shadowDOM",
           "/js/宏任务和微任务",
           "/js/generator",
@@ -108,6 +110,7 @@ module.exports = {
           "/css/css 有那些动画",
           "/css/层级上下文",
           "/css/rem原理",
+          "/css/伪类和伪元素的区别",
         ],
       },
       {
@@ -154,6 +157,13 @@ module.exports = {
         children: ["/算法/获取数组中最大的2个数，要求复杂难度最低"],
       },
       {
+        title: "TS",
+        path: "/TS",
+        collapsable: true,
+        sidebarDepth: 1,
+        children: ["/TS/泛型"],
+      },
+      {
         title: "其他",
         path: "/其他",
         collapsable: true,
@@ -183,6 +193,7 @@ module.exports = {
           "/面经/20210719微店",
           "/面经/20210720网易",
           "/面经/20210721阿里二面",
+          "/面经/20210728有赞",
         ],
       },
       // {
