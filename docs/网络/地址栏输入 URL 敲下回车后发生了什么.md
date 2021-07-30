@@ -1,5 +1,7 @@
 # 地址栏输入 URL 敲下回车后发生了什么
 
+[在浏览器输入 URL 回车之后发生了什么（超详细版）](https://zhuanlan.zhihu.com/p/80551769)
+
 - URL 解析
 - DNS 查询
 - TCP 连接
